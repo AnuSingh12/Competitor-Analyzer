@@ -1,36 +1,181 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Nexus Competitor Analyzer
 
-## Getting Started
+AI-powered competitor analysis and lead generation platform built using **Next.js, TypeScript, Gemini AI, Recharts, and jsPDF**.
 
-First, run the development server:
+The application helps founders, startups, and businesses understand their competitive landscape, identify feature gaps, discover market opportunities, generate potential leads, and receive actionable recommendations.
+
+---
+
+## 🌟 Features
+
+### 🔍 Competitor Analysis
+
+* Identify relevant competitors
+* Competitor confidence scoring
+* Competitive insights
+* Feature comparison matrix
+
+### 📊 Feature Gap Analysis
+
+* Detect missing features
+* Product improvement suggestions
+* Competitive advantage opportunities
+
+### 🎯 Opportunity Discovery
+
+* Market opportunities
+* Growth recommendations
+* Expansion possibilities
+
+### 👥 Lead Generation
+
+* Potential companies
+* Relevant decision-maker roles
+* Confidence-based lead ranking
+
+### 🧠 Recommendation Engine
+
+* Product recommendations
+* Market recommendations
+* Strategic founder action plans
+
+### 📈 Interactive Dashboard
+
+* Competitor Confidence Chart
+* Feature Gap Analysis Chart
+* Founder Action Plan
+* Feature Comparison Matrix
+
+### 📄 PDF Export
+
+* Download complete analysis report
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology       | Purpose            |
+| ---------------- | ------------------ |
+| Next.js          | Frontend & Backend |
+| TypeScript       | Type Safety        |
+| Google Gemini AI | Analysis Engine    |
+| Tailwind CSS     | UI Styling         |
+| Recharts         | Data Visualization |
+| jsPDF            | PDF Export         |
+| Vercel           | Deployment         |
+
+---
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/AnuSingh12/Competitor-Analyzer.git
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Create Environment File
+
+Create `.env.local`
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+### Run Application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 How It Works
 
-To learn more about Next.js, take a look at the following resources:
+1. User enters a Product Idea, Startup Concept, Company Name, or Website.
+2. Request is sent to the backend API.
+3. Gemini AI analyzes the input.
+4. Competitors are identified.
+5. Feature gaps are generated.
+6. Opportunities are discovered.
+7. Leads are suggested.
+8. Recommendations are produced.
+9. Results are visualized on the dashboard.
+10. Users can export insights as a PDF report.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📊 Dashboard Modules
 
-## Deploy on Vercel
+### Competitor Analysis
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Competitor list
+* Confidence scoring
+* Comparison matrix
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Lead Generation
+
+* Potential companies
+* Relevant business roles
+* Confidence ranking
+
+### Recommendation Engine
+
+* Product recommendations
+* Market recommendations
+* Growth opportunities
+
+---
+
+## 🔒 Security Features
+
+* Environment variables for API keys
+* Server-side Gemini integration
+* No API key exposure to frontend
+* Input validation
+* Strong TypeScript typing
+
+---
+
+## 🛡️ Reliability & Fallback Handling
+
+* AI analysis is generated using the Google Gemini API.
+* The application validates and parses AI responses before displaying results.
+* In case of API failures, quota limits, invalid responses, rate limits, or temporary service unavailability, the system gracefully falls back to generated placeholder insights.
+* This ensures the application remains functional and does not crash under common failure scenarios.
+* Users can continue exploring the dashboard, charts, comparison matrix, and PDF export even when live AI responses are unavailable.
+
+---
+
+## 💡 Assumptions
+
+* Competitor insights are AI-generated and may require manual validation.
+* Confidence scores represent AI-estimated confidence levels.
+* Lead information is generated based on contextual business analysis.
+* Some market information may be inferred when public data is unavailable.
+
+---
+
+---
+
+## 🌐 Deployment
+
+**Live Application:**
+https://competitor-analyzer-eta.vercel.app
+
+**GitHub Repository:**
+https://github.com/AnuSingh12/Competitor-Analyzer
